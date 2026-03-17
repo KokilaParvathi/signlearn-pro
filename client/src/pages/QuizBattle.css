@@ -1,0 +1,39 @@
+.battle-lobby { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 900px; }
+.lobby-card { background: var(--surface); border-radius: var(--radius-lg); padding: 32px; border: 1px solid var(--border); }
+.lobby-card h2 { font-size: 22px; margin-bottom: 20px; }
+.quiz-select-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+.quiz-select-item { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border: 2px solid var(--border); border-radius: var(--radius-sm); cursor: pointer; transition: all 0.2s; font-size: 20px; }
+.quiz-select-item:hover, .quiz-select-item.selected { border-color: var(--primary); background: rgba(108,99,255,0.05); }
+.qsi-title { font-weight: 700; font-size: 15px; } .qsi-sub { font-size: 13px; color: var(--text2); } .check { margin-left: auto; color: var(--success); font-weight: 800; font-size: 18px; }
+.waiting-room { display: flex; justify-content: center; }
+.waiting-card { background: var(--surface); border-radius: var(--radius-lg); padding: 40px; max-width: 480px; width: 100%; border: 1px solid var(--border); text-align: center; }
+.battle-code { margin-bottom: 28px; padding-bottom: 28px; border-bottom: 1px solid var(--border); }
+.battle-code > span { font-size: 13px; font-weight: 700; color: var(--text2); text-transform: uppercase; letter-spacing: 2px; }
+.code-display { font-size: 48px; font-weight: 900; letter-spacing: 8px; color: var(--primary); font-family: 'Baloo 2', sans-serif; margin: 8px 0; }
+.battle-code p { color: var(--text2); font-size: 14px; }
+.players-waiting { text-align: left; margin-bottom: 24px; }
+.players-waiting h3 { margin-bottom: 12px; }
+.player-waiting { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.pw-avatar { width: 36px; height: 36px; background: var(--primary); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; flex-shrink: 0; }
+.battle-playing { max-width: 800px; margin: 0 auto; }
+.battle-scoreboard { display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+.player-score { background: var(--surface); border-radius: var(--radius-sm); padding: 10px 16px; border: 2px solid var(--border); display: flex; gap: 10px; align-items: center; }
+.ps-name { font-weight: 700; } .ps-pts { color: var(--warning); font-weight: 800; }
+.battle-timer { text-align: center; margin-bottom: 16px; font-size: 48px; font-weight: 900; font-family: 'Baloo 2', sans-serif; color: var(--accent); }
+.battle-timer .urgent { color: var(--danger); animation: pulse 0.5s ease infinite alternate; }
+.battle-result { display: flex; justify-content: center; }
+.final-scores { margin: 24px 0; display: flex; flex-direction: column; gap: 10px; }
+.final-score-item { display: flex; align-items: center; gap: 12px; padding: 14px 20px; background: var(--surface2); border-radius: var(--radius-sm); font-size: 18px; font-weight: 700; }
+.final-score-item span:last-child { margin-left: auto; color: var(--warning); }
+.rank-1 { background: rgba(255,215,0,0.1); border: 2px solid rgba(255,215,0,0.3); }
+.rank-2 { background: rgba(192,192,192,0.1); border: 2px solid rgba(192,192,192,0.3); }
+.options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.option-btn { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 20px 16px; background: var(--surface2); border: 3px solid var(--border); border-radius: var(--radius); cursor: pointer; transition: all 0.2s ease; font-family: 'Nunito', sans-serif; color: var(--text); }
+.option-btn:hover:not(:disabled) { border-color: var(--primary); background: rgba(108,99,255,0.05); }
+.option-btn.selected { border-color: var(--primary); background: rgba(108,99,255,0.12); }
+.option-btn:disabled { opacity: 0.7; cursor: not-allowed; }
+.option-letter { width: 36px; height: 36px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 16px; }
+.option-text { font-weight: 600; font-size: 15px; text-align: center; }
+.question-card { background: var(--surface); border-radius: var(--radius-lg); padding: 32px; border: 1px solid var(--border); margin-bottom: 24px; }
+.question-text { font-size: 22px; margin-bottom: 28px; text-align: center; line-height: 1.5; }
+@media (max-width: 768px) { .battle-lobby { grid-template-columns: 1fr; } .options-grid { grid-template-columns: 1fr; } }

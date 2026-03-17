@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&family=Baloo+2:ital,wght@0,800;1,800&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+.auth-page{min-height:100vh;background:#0A0E1A;display:flex;align-items:center;justify-content:center;font-family:'Nunito',sans-serif;position:relative;overflow:hidden}
+.auth-geo{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.geo-shape{position:absolute;border-radius:20px}
+.g1{width:420px;height:420px;background:rgba(0,150,180,0.08);top:-140px;left:-100px;transform:rotate(15deg)}
+.g2{width:300px;height:300px;background:rgba(0,100,160,0.07);top:40px;left:60px;transform:rotate(-8deg)}
+.g3{width:250px;height:250px;background:rgba(0,180,160,0.05);bottom:20px;right:-40px;transform:rotate(20deg)}
+.g4{width:200px;height:200px;background:rgba(108,99,255,0.05);bottom:100px;right:200px;transform:rotate(-15deg)}
+.auth-card{position:relative;z-index:1;background:rgba(10,20,40,0.6);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:40px 44px;width:100%;max-width:440px}
+.auth-logo-row{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:28px}
+.auth-logo-box{width:44px;height:44px;background:#6C63FF;border-radius:12px;display:flex;align-items:center;justify-content:center}
+.auth-logo-name{line-height:1.1}
+.auth-sign{font-size:20px;font-weight:900;color:#43C6AC;font-family:'Baloo 2',sans-serif}
+.auth-learn{font-size:20px;font-weight:900;color:white;font-family:'Baloo 2',sans-serif}
+.auth-tagline{font-size:8px;color:rgba(255,255,255,0.3);letter-spacing:2.5px;margin-top:2px}
+.auth-tab-row{display:flex;gap:24px;margin-bottom:24px;border-bottom:1px solid rgba(255,255,255,0.07);padding-bottom:12px}
+.auth-tab{font-size:14px;font-weight:700;color:rgba(255,255,255,0.25);cursor:pointer;padding-bottom:4px;text-decoration:none;border:none;background:none;font-family:'Nunito',sans-serif}
+.auth-tab.active{color:#43C6AC;border-bottom:2px solid #43C6AC}
+.auth-form-label{font-size:9px;font-weight:700;color:rgba(255,255,255,0.2);letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
+.auth-error{background:rgba(255,107,107,0.08);border:1px solid rgba(255,107,107,0.25);color:#FF6B6B;padding:10px 14px;border-radius:8px;font-size:13px;margin-bottom:14px}
+.auth-field{margin-bottom:14px}
+.auth-field label{display:block;font-size:11px;color:rgba(255,255,255,0.45);margin-bottom:6px;font-weight:600}
+.auth-field input{width:100%;padding:12px 16px;border:1px solid rgba(255,255,255,0.09);border-radius:8px;font-size:13px;color:white;background:rgba(255,255,255,0.04);outline:none;font-family:'Nunito',sans-serif;transition:border-color 0.2s}
+.auth-field input::placeholder{color:rgba(255,255,255,0.15)}
+.auth-field input:focus{border-color:#43C6AC}
+.role-tabs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px}
+.role-tab{padding:11px;border:1px solid rgba(255,255,255,0.09);border-radius:8px;font-size:13px;font-weight:700;color:rgba(255,255,255,0.3);text-align:center;cursor:pointer;transition:all 0.2s;font-family:'Nunito',sans-serif}
+.role-tab.active{border-color:#43C6AC;background:rgba(67,198,172,0.08);color:#43C6AC}
+.auth-btn{width:100%;padding:13px;background:#43C6AC;color:#0A0E1A;border:none;border-radius:8px;font-size:13px;font-weight:900;cursor:pointer;letter-spacing:1px;font-family:'Nunito',sans-serif;margin-top:8px;margin-bottom:20px;transition:background 0.2s}
+.auth-btn:hover{background:#38B89A}
+.auth-btn:disabled{opacity:0.6;cursor:not-allowed}
+.auth-link{text-align:center;font-size:12px;color:rgba(255,255,255,0.3)}
+.auth-link a{color:#43C6AC;font-weight:700;text-decoration:none}
+@media(max-width:480px){.auth-card{padding:28px 20px;margin:16px}}

@@ -1,0 +1,29 @@
+.profile-grid { display: grid; grid-template-columns: 340px 1fr; gap: 24px; }
+.profile-card { background: var(--surface); border-radius: var(--radius-lg); padding: 32px; border: 1px solid var(--border); text-align: center; }
+.profile-avatar { width: 100px; height: 100px; background: linear-gradient(135deg, var(--primary), var(--accent)); border-radius: 28px; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px; font-weight: 800; margin: 0 auto 16px; }
+.profile-card h2 { font-size: 24px; margin-bottom: 4px; }
+.profile-card > p { color: var(--text2); font-size: 14px; margin-bottom: 12px; }
+.level-display { background: var(--surface2); border-radius: var(--radius); padding: 16px; margin: 20px 0; text-align: left; }
+.level-badge { display: flex; gap: 12px; align-items: center; margin-bottom: 12px; font-size: 24px; }
+.level-number { font-size: 20px; font-weight: 800; } .level-label { font-size: 12px; color: var(--text2); }
+.xp-row { display: flex; justify-content: space-between; font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+.xp-bar { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
+.xp-fill { height: 100%; background: linear-gradient(90deg, var(--primary), var(--accent)); transition: width 0.5s; }
+.achievement-stats { display: flex; justify-content: center; gap: 20px; }
+.ach-stat { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.ach-icon { font-size: 28px; } .ach-val { font-size: 22px; font-weight: 800; } .ach-label { font-size: 12px; color: var(--text2); }
+.settings-panel { display: flex; flex-direction: column; gap: 20px; }
+.settings-section { background: var(--surface); border-radius: var(--radius); padding: 24px; border: 1px solid var(--border); }
+.settings-section h3 { font-size: 18px; margin-bottom: 16px; }
+.setting-item { display: flex; justify-content: space-between; align-items: center; }
+.setting-title { font-weight: 700; font-size: 15px; margin-bottom: 4px; } .setting-desc { font-size: 13px; color: var(--text2); }
+.toggle-btn { padding: 10px 20px; background: var(--primary); color: white; border: none; border-radius: var(--radius-sm); font-weight: 700; cursor: pointer; font-family: 'Nunito', sans-serif; font-size: 14px; transition: background 0.2s; }
+.toggle-btn:hover { background: var(--primary-dark); }
+.lang-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; }
+.lang-option { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 12px 8px; border: 2px solid var(--border); border-radius: var(--radius-sm); cursor: pointer; transition: all 0.2s; font-size: 13px; font-weight: 600; text-align: center; }
+.lang-option:hover { border-color: var(--primary); }
+.lang-option.selected { border-color: var(--primary); background: rgba(108,99,255,0.1); color: var(--primary); }
+.settings-msg { padding: 12px 16px; background: rgba(86,197,150,0.12); border: 2px solid rgba(86,197,150,0.3); border-radius: var(--radius-sm); font-weight: 600; }
+.save-btn { width: 100%; justify-content: center; padding: 14px; font-size: 16px; }
+@media (max-width: 900px) { .profile-grid { grid-template-columns: 1fr; } }
+@media (max-width: 500px) { .lang-grid { grid-template-columns: repeat(2,1fr); } }
