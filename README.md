@@ -1,4 +1,4 @@
-# 🤝 EduSign - Learning Platform for Deaf and Mute People
+# 🤝 SignLearn - Learning Platform for Deaf and Mute People
 
 A comprehensive, accessible digital learning platform built with the MERN stack, designed specifically for students with hearing and speech disabilities.
 
