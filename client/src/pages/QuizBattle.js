@@ -25,7 +25,7 @@ export default function QuizBattle() {
   useEffect(() => {
     axios.get('/api/quizzes').then(r => setQuizzes(r.data.filter(q => q.isBattleEnabled)));
 
-    const socket = io(process.env.REACT_APP_SERVER_URL || window.location.origin);
+    const socket = io(window.location.origin);
     socketRef.current = socket;
 
     // Someone joined this room
