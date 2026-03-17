@@ -21,7 +21,7 @@ export default function GroupChat() {
   const socketRef = useRef(null);
 
   useEffect(() => {
-    socketRef.current = io(window.location.origin);
+    socketRef.current = io(process.env.REACT_APP_SERVER_URL || window.location.origin);
     return () => socketRef.current?.disconnect();
   }, []);
 
